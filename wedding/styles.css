@@ -5,6 +5,16 @@ body {
     background-image: url('resources/trifuerza.jpeg');
     background-size: cover;
 }
+.wedding_video {
+    width: 100%;
+    height: fit-content;
+}
+@media (min-width: 600px) {
+    .wedding_video {
+        width: 600px;
+        height: fit-content;
+    }
+}
 h1 {
     font-family: "Courier New", monospace;
     font-size: 24px;

@@ -8,10 +8,6 @@
         <script type="module" src="scripts/firebaseLibrariesScript.js"></script>
         <script src="scripts/lottieLibScript.js"></script>
         <style>
-            body {
-                margin: 0;
-                font-family: Arial, sans-serif;
-            }
             .container {
                 display: flex;
                 flex-direction: column;
@@ -58,10 +54,12 @@
         <div class="container">
             <h1>Hola, mundo!</h1>
             <p>¡Este es un ejemplo simple de un documento HTML que muestra un saludo!</p>
-            <video width="320" height="240" controls autoplay>
-                <source src="resources/example_video.mp4" type="video/mp4">
-                Tu navegador no soporta el elemento de video.
-            </video>
+            <div>
+                <video class="wedding_video" autoplay loop muted>
+                    <source src="resources/example_video.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
             <p></p>
             <button  id="boton">Ver en maps</button>
             <p></p>
