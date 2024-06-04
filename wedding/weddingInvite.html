@@ -26,6 +26,11 @@
                 background-color: lightcoral;
                 text-align: center;
             }
+            .iframe-maps {
+                width: 100%;
+                margin-left: 10px;
+                margin-right: 20px;
+            }
             @media (min-width: 600px) {
                 .container {
                     flex-direction: row;
@@ -33,6 +38,11 @@
                 }
                 .box {
                     width: 30%;
+                }
+                .iframe-maps {
+                    width: 600px;
+                    margin-left: 10px;
+                    margin-right: 20px;
                 }
             }
         </style>
@@ -57,15 +67,14 @@
             <a id="enlace" href="" target="_blank"> Ir a Ejemplo.com</a>
             <p></p>
             <iframe
-                    width="600"
+                    class="iframe-maps"
                     height="450"
                     style="border:0"
                     loading="lazy"
                     allowfullscreen
                     referrerpolicy="no-referrer-when-downgrade"
                     id="mapsFrame"
-            >
-            </iframe>
+            ></iframe>
             <p></p>
             <div>
                 <lottie-player src="" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop controls autoplay></lottie-player>
