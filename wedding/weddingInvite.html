@@ -4,15 +4,51 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet"  href="styles.css"       type="text/css">
-        <link rel="icon"        href="page_icon.ico"    type="image/x-icon">
+        <link rel="icon"        href="resources/page_icon.ico"    type="image/x-icon">
+        <script type="module" src="scripts/firebaseLibrariesScript.js"></script>
+        <script src="scripts/lottieLibScript.js"></script>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 auto;
+                max-width: 1200px;
+            }
+            .box {
+                width: 100%;
+                margin: 10px;
+                padding: 20px;
+                background-color: lightcoral;
+                text-align: center;
+            }
+            @media (min-width: 600px) {
+                .container {
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+                .box {
+                    width: 30%;
+                }
+            }
+        </style>
         <title>Boda Alfredo y Andrea</title>
     </head>
     <body>
         <div class="container">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+        <div class="container">
             <h1>Hola, mundo!</h1>
             <p>¡Este es un ejemplo simple de un documento HTML que muestra un saludo!</p>
             <video width="320" height="240" controls autoplay>
-                <source src="example_video.mp4" type="video/mp4">
+                <source src="resources/example_video.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento de video.
             </video>
             <p></p>
@@ -27,27 +63,15 @@
                     loading="lazy"
                     allowfullscreen
                     referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAsl_wF89EpRrIYJ1-nxn70zPk_Jt2SpuQ
-                    &q=Salones+de+Eventos+Cabaña+Encantada">
+                    id="mapsFrame"
+            >
             </iframe>
             <p></p>
+            <div>
+                <lottie-player src="" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop controls autoplay></lottie-player>
+            </div>
         </div>
-        <script src="mapsUrlScript.js"></script>
-        <script type="module">
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-            import { getFirestore } from "firebase/firestore";
-
-            const firebaseConfig = {
-                apiKey: "AIzaSyAsl_wF89EpRrIYJ1-nxn70zPk_Jt2SpuQ",
-                authDomain: "weddingweb-9a4de.firebaseapp.com",
-                projectId: "weddingweb-9a4de",
-                storageBucket: "weddingweb-9a4de.appspot.com",
-                messagingSenderId: "807432626652",
-                appId: "1:807432626652:web:e43e775e74983ee6216f19"
-            };
-
-            const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
-        </script>
+        <script src="scripts/mapsUrlScript.js"></script>
+        <script src="scripts/iFrameScript.js"></script>
     </body>
 </html>

@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     color: #333;
-    background-image: url('trifuerza.jpeg');
+    background-image: url('resources/trifuerza.jpeg');
     background-size: cover;
 }
 h1 {
