@@ -14,63 +14,69 @@
             width: 100%;
             height: 100%;
         }
-        .container {
-            position: relative;
-        }
-        .title_row {
-            z-index: 1;
-            display: inline;
-        }
-        .title_box {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            background-color: white;
-            display: inline;
-            text-align: center;
-            align-content: center;
-        }
-        .title_image {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            text-align: center;
-            align-content: center;
-        }
-        .title_logo {
-            position: absolute; /* Posición absoluta */
-            top: 100%; /* Centrado verticalmente */
-            left: 50%; /* Centrado horizontalmente */
-            transform: translate(-50%, -50%); /* Ajuste para centrar */
-            background-color: black;
-            width: 100px;
-            height: 100px;
-            z-index: 2;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
-        .title_image video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .title_logo #lottie-container {
-            width: 70%;
-            height: 70%;
-            object-fit: cover;
-        }
-        .title_box h1 {
-            font-family: "MyFont", sans-serif;
-            font-size: 80px;
-            color: #F3CA4D;
-        }
-        .title_box h2 {
-            font-family: "Brush Script MT", sans-serif;
-            font-size: 50px;
-            color: #F3CA4D;
+        @media (max-width: 600px) {
+            .container {
+                position: relative;
+                flex-direction: column;
+            }
+            .title_row {
+                z-index: 1;
+                display: inline;
+            }
+            .title_box {
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                background-color: white;
+                display: inline;
+                text-align: center;
+                align-content: center;
+            }
+            .title_image {
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                text-align: center;
+                align-content: center;
+            }
+            .title_logo {
+                position: absolute; /* Posición absoluta */
+                top: 100%; /* Centrado verticalmente */
+                left: 50%; /* Centrado horizontalmente */
+                transform: translate(-50%, -50%); /* Ajuste para centrar */
+                background-color: black;
+                width: 100px;
+                height: 100px;
+                z-index: 2;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+            .title_image video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .title_logo #lottie-container {
+                width: 70%;
+                height: 70%;
+                object-fit: cover;
+            }
+            .title_box h1 {
+                font-family: "MyFont", sans-serif;
+                font-size: 80px;
+                color: #F3CA4D;
+            }
+            .title_box h2 {
+                font-family: "Brush Script MT", sans-serif;
+                font-size: 50px;
+                color: #F3CA4D;
+            }
         }
         @media (min-width: 600px) {
+            .container {
+                position: relative;
+            }
             .title_row {
                 z-index: 1;
                 display: flex;
@@ -130,6 +136,7 @@
 </head>
 <body>
 <div class = "container">
+    <div>Cambio 1</div>
     <div class = "title_row">
         <div class = "title_box">
             <p>Nos casaremos!</p>
