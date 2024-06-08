@@ -19,10 +19,10 @@
         }
         .title_row {
             z-index: 1;
-            display: flex;
+            display: inline;
         }
         .title_box {
-            width: 50%;
+            width: 100%;
             aspect-ratio: 1 / 1;
             background-color: white;
             display: inline;
@@ -30,14 +30,14 @@
             align-content: center;
         }
         .title_image {
-            width: 50%;
+            width: 100%;
             aspect-ratio: 1 / 1;
             text-align: center;
             align-content: center;
         }
         .title_logo {
             position: absolute; /* Posición absoluta */
-            top: 50%; /* Centrado verticalmente */
+            top: 100%; /* Centrado verticalmente */
             left: 50%; /* Centrado horizontalmente */
             transform: translate(-50%, -50%); /* Ajuste para centrar */
             background-color: black;
@@ -69,6 +69,61 @@
             font-family: "Brush Script MT", sans-serif;
             font-size: 50px;
             color: #F3CA4D;
+        }
+        @media (min-width: 600px) {
+            .title_row {
+                z-index: 1;
+                display: flex;
+            }
+            .title_box {
+                width: 50%;
+                aspect-ratio: 1 / 1;
+                background-color: white;
+                display: inline;
+                text-align: center;
+                align-content: center;
+            }
+            .title_image {
+                width: 50%;
+                aspect-ratio: 1 / 1;
+                text-align: center;
+                align-content: center;
+            }
+            .title_logo {
+                position: absolute; /* Posición absoluta */
+                top: 50%; /* Centrado verticalmente */
+                left: 50%; /* Centrado horizontalmente */
+                transform: translate(-50%, -50%); /* Ajuste para centrar */
+                background-color: black;
+                width: 100px;
+                height: 100px;
+                z-index: 2;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+            .title_image video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .title_logo #lottie-container {
+                width: 70%;
+                height: 70%;
+                object-fit: cover;
+            }
+            .title_box h1 {
+                font-family: "MyFont", sans-serif;
+                font-size: 80px;
+                color: #F3CA4D;
+            }
+            .title_box h2 {
+                font-family: "Brush Script MT", sans-serif;
+                font-size: 50px;
+                color: #F3CA4D;
+            }
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"></script>
