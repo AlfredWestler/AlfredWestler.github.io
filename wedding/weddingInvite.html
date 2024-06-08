@@ -1,66 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"  href="styles.css"       type="text/css">
-        <link rel="icon"        href="resources/page_icon.ico"    type="image/x-icon">
-        <script type="module" src="scripts/firebaseLibrariesScript.js"></script>
-        <script src="scripts/lottieLibScript.js"></script>
-        <style>
-            .container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: 0;
-                max-width: 1200px;
-            }
-            .iframe-maps {
-                width: 100%;
-                align-content: center;
-            }
-            @media (min-width: 600px) {
-                .container {
-                    flex-direction: column;
-                    justify-content: space-around;
-                }
-                .iframe-maps {
-                    width: 600px;
-                }
-            }
-        </style>
-        <title>Boda Alfredo y Andrea</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Hola, mundo!</h1>
-            <p>¡Este es un ejemplo simple de un documento HTML que muestra un saludo!</p>
-            <div>
-                <video class="wedding_video" autoplay loop muted>
-                    <source src="resources/example_video.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                </video>
-            </div>
-            <p></p>
-            <button  id="boton">Ver en maps</button>
-            <p></p>
-            <a id="enlace" target="_blank"> Ir a Ejemplo.com</a>
-            <p></p>
-            <iframe
-                    class="iframe-maps"
-                    height="450"
-                    style="border:0"
-                    loading="lazy"
-                    allowfullscreen
-                    referrerpolicy="no-referrer-when-downgrade"
-                    id="mapsFrame"
-            ></iframe>
-            <p></p>
-            <div>
-                <lottie-player src="" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop controls autoplay></lottie-player>
-            </div>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Boda Alfredo y Andrea</title>
+    <style>
+        @font-face {
+            font-family: "MyFont";
+            src: url('resources/Raffadyn.ttf') format('truetype');
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            position: relative;
+        }
+        .title_row {
+            z-index: 1;
+            display: flex;
+        }
+        .title_box {
+            width: 50%;
+            aspect-ratio: 1 / 1;
+            background-color: white;
+            display: inline;
+            text-align: center;
+            align-content: center;
+        }
+        .title_image {
+            width: 50%;
+            aspect-ratio: 1 / 1;
+            text-align: center;
+            align-content: center;
+        }
+        .title_logo {
+            position: absolute; /* Posición absoluta */
+            top: 50%; /* Centrado verticalmente */
+            left: 50%; /* Centrado horizontalmente */
+            transform: translate(-50%, -50%); /* Ajuste para centrar */
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            z-index: 2;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .title_image video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .title_logo #lottie-container {
+            width: 70%;
+            height: 70%;
+            object-fit: cover;
+        }
+        .title_box h1 {
+            font-family: "MyFont", sans-serif;
+            font-size: 80px;
+            color: #F3CA4D;
+        }
+        .title_box h2 {
+            font-family: "Brush Script MT", sans-serif;
+            font-size: 50px;
+            color: #F3CA4D;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"></script>
+</head>
+<body>
+<div class = "container">
+    <div class = "title_row">
+        <div class = "title_box">
+            <p>Nos casaremos!</p>
+            <h1>Andrea<br>y<br>Alfredo</h1>
+            <h3>Domingo 17 de Noviembre del 2024</h3>
+            <h2 id="countdown"></h2>
         </div>
-        <script src="scripts/mapsUrlScript.js"></script>
-        <script src="scripts/iFrameScript.js"></script>
-    </body>
+        <div class="title_image">
+            <video autoplay muted loop>
+                <source src="resources/example_video.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    </div>
+    <div class = "title_logo">
+        <div id="lottie-container"></div>
+    </div>
+</div>
+<script>
+    const animation = lottie.loadAnimation({
+        container: document.getElementById('lottie-container'), // el contenedor donde se reproducirá la animación
+        renderer: 'svg', // el tipo de renderizado (svg, canvas, html)
+        loop: true, // si la animación debe repetirse en bucle
+        autoplay: true, // si la animación debe comenzar a reproducirse automáticamente
+        path: 'resources/example_lottie.json' // la ruta al archivo JSON de la animación
+    });
+</script>
+<script>
+    const countDownDate = new Date("Nov 17, 2024 16:00:00").getTime();
+
+    // Actualiza la cuenta regresiva cada segundo
+    const x = setInterval(function() {
+
+        // Obtiene la fecha y hora actual
+        const now = new Date().getTime();
+
+        // Calcula la diferencia entre la fecha objetivo y la fecha actual
+        const distance = countDownDate - now;
+
+        // Calcula los días, horas, minutos y segundos restantes
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Muestra la cuenta regresiva en un elemento HTML
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+        // Si la cuenta regresiva ha terminado, muestra un mensaje
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "LA FIESTA YA EMPEZÓ!";
+        }
+    }, 1000);
+</script>
+</body>
 </html>
