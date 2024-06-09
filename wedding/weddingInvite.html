@@ -131,22 +131,60 @@
                 font-size: 50px;
                 color: #F3CA4D;
             }
+            .title_box table {
+                border-collapse: collapse;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .title_box td {
+                border: 0;
+                padding: 10px 20px;
+            }
+            .highlight {
+                font-family: "Brush Script MT", sans-serif;
+                font-size: 2em;
+                color: #F3CA4D;
+            }
+            #table-container {
+                text-align: center;
+            }
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"></script>
 </head>
 <body>
 <div class = "container">
-    <div>Cambio 6</div>
+    <div>Cambio 7</div>
     <div class = "title_row">
         <div class = "title_box">
             <p>Nos casaremos!</p>
             <h1>Andrea<br>y<br>Alfredo</h1>
             <h3>Domingo 17 de Noviembre del 2024</h3>
-            <h2 id="countdown"></h2>
+            <div id="table-container">
+                <table id="countdown-table">
+                    <tr>
+                        <td id="days-value" class="highlight">0</td>
+                        <td class="highlight">:</td>
+                        <td id="hours-value" class="highlight">0</td>
+                        <td class="highlight">:</td>
+                        <td id="minutes-value" class="highlight">0</td>
+                        <td class="highlight">:</td>
+                        <td id="seconds-value" class="highlight">0</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight">Días</td>
+                        <td></td>
+                        <td class="highlight">Horas</td>
+                        <td></td>
+                        <td class="highlight">Minutos</td>
+                        <td></td>
+                        <td class="highlight">Segundos</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div class="title_image">
-            <video autoplay muted loop>
+            <video autoplay muted loop playsinline>
                 <source src="resources/example_video.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento de video.
             </video>
@@ -166,7 +204,7 @@
     });
 </script>
 <script>
-    const countDownDate = new Date("Nov 17, 2024 16:00:00").getTime();
+    const countDownDate = new Date("Jun 10, 2024 01:04:00").getTime();
 
     // Actualiza la cuenta regresiva cada segundo
     const x = setInterval(function() {
@@ -184,13 +222,15 @@
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Muestra la cuenta regresiva en un elemento HTML
-        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
+        document.getElementById("days-value").innerHTML = days.toString();
+        document.getElementById("hours-value").innerHTML = hours.toString();
+        document.getElementById("minutes-value").innerHTML = minutes.toString();
+        document.getElementById("seconds-value").innerHTML = seconds.toString();
 
         // Si la cuenta regresiva ha terminado, muestra un mensaje
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("countdown").innerHTML = "LA FIESTA YA EMPEZÓ!";
+            document.getElementById("table-container").innerHTML = "<h2>LA FIESTA YA EMPEZÓ!</h2>";
         }
     }, 1000);
 </script>
