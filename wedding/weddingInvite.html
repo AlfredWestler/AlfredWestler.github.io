@@ -82,9 +82,9 @@
                 border: 0;
                 padding: 10px 20px;
             }
-            .highlight {
+            .title_box .highlight {
                 font-family: "Brush Script MT", sans-serif;
-                font-size: 5vw;
+                font-size: 2em;
                 color: #F3CA4D;
             }
             #table-container {
@@ -159,7 +159,7 @@
             }
             .title_box .highlight {
                 font-family: "Brush Script MT", sans-serif;
-                font-size: 2vw;
+                font-size: 2em;
                 color: #F3CA4D;
             }
             #table-container {
@@ -211,6 +211,14 @@
         <div id="lottie-container"></div>
     </div>
 </div>
+<div>
+    <p>Box Width</p>
+    <p id="box_width">0</p>
+    <p>Table Width</p>
+    <p id="table_width">0</p>
+    <p>Text</p>
+    <p id="text_with_highlight">0</p>
+</div>
 <script>
     const animation = lottie.loadAnimation({
         container: document.getElementById('lottie-container'), // el contenedor donde se reproducirá la animación
@@ -250,6 +258,38 @@
             document.getElementById("table-container").innerHTML = "<h2>LA FIESTA YA EMPEZÓ!</h2>";
         }
     }, 1000);
+</script>
+<script>
+    function adjustTextSize() {
+        document.getElementById("box_width").innerHTML = "adjust box from 600px and lower"
+        document.getElementById("table_width").innerHTML = "adjust table from 600px and lower"
+    }
+
+    function adjustTextSizeRow() {
+        let a = document.getElementById("countdown-table").offsetWidth; //da 1938
+        let b = document.querySelector('.title_box').offsetWidth; //da 720
+        const texts = document.querySelectorAll(".highlight");
+        let font = 2;
+
+        while(a > b) {
+            font -= 1;
+            texts.forEach(text => {
+                text.style.fontSize = font + "em";
+            })
+            a = document.getElementById("countdown-table").offsetWidth;
+        }
+    }
+
+    function adjustTextSizeBasedOnLayout() {
+        if (window.innerWidth <= 600) {
+            adjustTextSizeRow();
+        } else {
+            adjustTextSizeRow();
+        }
+    }
+
+    window.onload = adjustTextSizeBasedOnLayout;
+    window.onresize = adjustTextSizeBasedOnLayout;
 </script>
 </body>
 </html>
