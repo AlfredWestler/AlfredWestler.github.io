@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.fullContainer {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.scrim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 24px;
+}
+
+.divider {
+    height: 2px;
+    flex-grow: 1;
+    margin: 0 24px;
+}
+
+.white-divider {
+    background-color: white;
+}
+
+.blue-divider {
+    background-color: blue;
+}
+
+.logo-box {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    color: white;
+}
+
+.names-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+
+.ampersand-box {
+    width: 24px;
+    height: 24px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.ampersand-text {
+    color: white;
+    margin: 0;
+}
+
+.bottom-divider {
+    width: calc(100% - 48px); /* Adjust for padding */
+    height: 2px;
+    background-color: white;
+    margin: 24px 0;
+}
+
+.quote {
+    width: calc(100% - 64px); /* Adjust for padding */
+    color: white;
+    font-size: 28px;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}

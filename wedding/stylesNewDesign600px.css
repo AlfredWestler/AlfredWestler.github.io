@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.fullContainer {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+*  @Style
+*  Section: Main Title Header
+*  Id: p1
+*/
+
+.p1-container {
+    display: flex;
+    width: 100%;
+}
+
+.p1-background-content {
+    position: relative;
+    width: 60%;
+}
+
+.p1-quote-content {
+    width: 40%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p1-quote-text {
+    width: calc(100% - 64px); /* Adjust for padding */
+    color: white;
+    font-size: 28px;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}
+
+.p1-background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.p1-background-scrim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+}
+
+.p1-title-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.p1-title-header-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 24px;
+}
+
+.p1-title-header-divider {
+    height: 2px;
+    flex-grow: 1;
+    background-color: white;
+    margin: 0 24px;
+}
+
+.p1-title-bottom-divider {
+    width: calc(100% - 48px); /* Adjust for padding */
+    height: 2px;
+    background-color: white;
+    margin: 24px 0;
+}
+
+.p1-title-header-logo-box {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p1-title-names-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p1-title-names-h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+
+.p1-title-names-ampersand-box {
+    width: 24px;
+    height: 24px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.p1-title-names-ampersand-text {
+    color: white;
+    margin: 0;
+}
+
+/* Styles for First part invite */

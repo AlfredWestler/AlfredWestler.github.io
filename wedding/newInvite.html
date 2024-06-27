@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url("resources/sheet_background.png");
+        }
+        .names {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo {
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+    <div class="names">
+        <p>Andrea</p>
+        <div class="logo">Logo</div>
+        <p>Alfredo</p>
+    </div>
+    <div>
+        <p>Query params</p>
+        <p id="input_query"></p>
+    </div>
+
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param)
+        }
+
+        const id = getQueryParam("id")
+
+        if(id !== null) {
+            document.getElementById("input_query").innerText = `El valor de id es ${id}`;
+        } else {
+            document.getElementById("input_query").innerText = `No se encontró el parámetro "id" en la URL.`;
+        }
+    </script>
+</body>
+</html>

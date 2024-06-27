@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wedding Invite</title>
+</head>
+<body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth > 600) {
+      window.location.href = 'newDesignDesktop.html';
+    } else {
+      window.location.href = 'newDesignMobiles.html';
+    }
+  });
+
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 600) {
+      window.location.href = 'newDesignDesktop.html';
+    } else {
+      window.location.href = 'newDesignMobiles.html';
+    }
+  });
+</script>
+</body>
+</html>
