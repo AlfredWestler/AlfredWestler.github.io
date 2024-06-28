@@ -7,21 +7,28 @@
 </head>
 <body>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    if (window.innerWidth > 600) {
-      window.location.href = 'newDesignDesktop.html';
-    } else {
-      window.location.href = 'newDesignMobiles.html';
-    }
-  });
+  function redirectToAppropriateHTML() {
+    const queryParams = new URLSearchParams(window.location.search);
+    const width = window.innerWidth;
 
-  window.addEventListener('resize', function() {
-    if (window.innerWidth > 600) {
-      window.location.href = 'newDesignDesktop.html';
+    let targetURL;
+
+    if (width > 600) {
+      targetURL = 'newDesignDesktop.html';
     } else {
-      window.location.href = 'newDesignMobiles.html';
+      targetURL = 'newDesignMobiles.html';
     }
-  });
+
+    if (queryParams.toString()) {
+      //targetURL += '?' + queryParams.toString();
+      targetURL += '?' + 'change=Cambio 1'
+    }
+
+    window.location.href = targetURL;
+  }
+
+  window.onload = redirectToAppropriateHTML;
+  window.addEventListener('resize', redirectToAppropriateHTML);
 </script>
 </body>
 </html>

@@ -5,32 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesNewDesign.css" type="text/css">
     <title>Wedding Invite Mobiles</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"></script>
 </head>
 <body>
 <div class="fullContainer">
-    <div class="container">
-        <img src="resources/wedback.jpeg" alt="Wedding background image" class="background-image">
-        <div class="scrim"></div>
-        <div class="content">
-            <div class="header-row">
-                <div class="divider white-divider"></div>
-                <div class="logo-box">
-                    <p class="logo-text">LOGO</p>
+    <p id="input-query" style="color: black"></p>
+    <div class="p1-container">
+        <img src="resources/wedback.jpeg" alt="Wedding background image" class="p1-background-image">
+        <div class="p1-background-scrim"></div>
+        <div class="p1-title-content">
+            <div class="p1-title-header-row">
+                <div class="p1-title-divider"></div>
+                <div class="p1-title-logo-box">
+                    <p style="color: white">LOGO</p>
                 </div>
-                <div class="divider blue-divider"></div>
+                <div class="p1-title-divider"></div>
             </div>
-            <div class="names-column">
-                <p class="name">Andrea</p>
-                <div class="ampersand-box">
-                    <p class="ampersand-text">&</p>
+            <div class="p1-title-names-column">
+                <p class="p1-title-names-h1">Andrea</p>
+                <div class="p1-title-names-ampersand-box">
+                    <p class="p1-title-names-ampersand-text">&</p>
                 </div>
-                <p class="name">Alfredo</p>
+                <p class="p1-title-names-h1">Alfredo</p>
             </div>
-            <div class="bottom-divider white-divider"></div>
-            <p class="quote">Este espacio esta reservado para poner una quote que nos guste</p>
+            <div class="p1-title-bottom-divider"></div>
+            <p class="p1-title-quote">Este espacio esta reservado para poner una quote que nos guste</p>
         </div>
     </div>
-    <p>Siguientes contenedores aqui</p>
+    <div class="p2-content p2-count-down">
+        <p class="p2-title-text">Falta</p>
+        <table class="p2-table">
+            <tr>
+                <td id="table-days" class="p2-table-values p2-table-border">-</td>
+                <td id="table-hours" class="p2-table-values p2-table-border">-</td>
+                <td id="table-minutes" class="p2-table-values p2-table-border">-</td>
+                <td id="table-seconds" class="p2-table-values">-</td>
+            </tr>
+            <tr>
+                <th class="p2-table-params p2-table-border">Días</th>
+                <th class="p2-table-params p2-table-border">Horas</th>
+                <th class="p2-table-params p2-table-border">Minutos</th>
+                <th class="p2-table-params">Segundos</th>
+            </tr>
+        </table>
+    </div>
+    <div class="p2-finish-content p2-finish-count">
+        <h2 id="finish-text" class="p2-finish-text"></h2>
+        <div id="finish-count-lottie-container" class="p2-finish-lottie"></div>
+    </div>
 </div>
+<script src="CountDownScript.js"></script>
+<script src="QueryParamsScript.js"></script>
 </body>
 </html>

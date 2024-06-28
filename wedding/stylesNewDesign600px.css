@@ -33,7 +33,7 @@ body {
 
 .p1-quote-content {
     width: 40%;
-    background-color: red;
+    background-color: #0A497B;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +79,6 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 0 24px;
 }
 
 .p1-title-header-divider {
@@ -136,4 +135,86 @@ body {
     margin: 0;
 }
 
-/* Styles for First part invite */
+/*
+* @Styles
+* Section: Count Down Timer
+* ID: p2
+*/
+
+.p2-content {
+    width: 100%;
+    background-color: #06355a;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p2-count-down {
+    display: flex;
+}
+
+.p2-finish-count {
+    display: none;
+}
+
+.p2-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.p2-table-values {
+    padding: 10px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.p2-table-params {
+    padding: 10px;
+    text-align: center;
+    color: #feb47b;
+}
+
+.p2-table-border {
+    border-right: 2px solid yellow;
+}
+
+.p2-title-text {
+    font-size: 50px;
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.p2-finish-content {
+    width: 100%;
+    background-color: #06355a;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    position: relative; /* Necesario para el posicionamiento absoluto */
+    height: 70vh;
+}
+
+.p2-finish-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+}
+
+.p2-finish-lottie {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
