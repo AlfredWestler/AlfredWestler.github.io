@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Modal Example</title>
+</head>
+<body>
+
+<button onclick="addToCalendar()">Add to Calendar</button>
+
+<script>
+    function addToCalendar() {
+        const title = "Sample Event";
+        const startDate = "20240628T090000Z"; // YYYYMMDDTHHmmssZ format
+        const endDate = "20240628T100000Z";   // YYYYMMDDTHHmmssZ format
+        const description = "This is a sample event.";
+        const location = "123 Sample St, Sample City";
+
+        const url = `webcal://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startDate}/${endDate}&details=${encodeURIComponent(description)}&location=${encodeURIComponent(location)}`;
+
+        window.open(url, "_blank");
+    }
+</script>
+</body>
+</html>
