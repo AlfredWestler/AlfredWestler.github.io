@@ -20,8 +20,9 @@
     }
 
     if (queryParams.toString()) {
-      //targetURL += '?' + queryParams.toString();
-      targetURL += '?' + 'change=Cambio 1'
+      targetURL += '?' + queryParams.toString()
+    } else {
+      targetURL += '?' + 'change=Cambio 2'
     }
 
     window.location.href = targetURL;
