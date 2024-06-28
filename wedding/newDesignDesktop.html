@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Invite Desktop</title>
     <link rel="stylesheet" href="stylesNewDesign600px.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"></script>
 </head>
 <body>
 <div class="fullContainer">
@@ -32,7 +33,8 @@
             </div>
         </div>
         <div class="p1-quote-content">
-            <p class="p1-quote-text">Este espacio esta reservado para poner una quote que nos guste</p>
+            <p class="p1-quote-text">"De un corazón malvado el duro remordimiento pocas veces se aleja, la parte malévola se calcina sin las incomodas cadenas de la sentimental introspec- spec- spec- spec..."</p>
+            <p class="p1-quote-text">- Perry el Ornitorrinco</p>
         </div>
     </div>
     <div class="p2-content p2-count-down">
@@ -56,9 +58,62 @@
         <h2 class="p2-finish-text">LA FIESTA YA EMPEZÓ!</h2>
         <div id="finish-count-lottie-container" class="p2-finish-lottie"></div>
     </div>
-
+    <div class="p3-behind-container">
+        <div class="p3-container">
+            <div class="p3-map-container">
+                <iframe
+                        class="p3-map-frame"
+                        id="church-maps-frame"
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+            <div class="p3-info-container">
+                <div class="p3-rings-lottie">
+                    <div id="rings-lottie-container"></div>
+                </div>
+                <hr class="p3-title-divider">
+                <p class="p3-title-text">Ceremonia</p>
+                <hr class="p3-title-divider">
+                <p class="p3-subtitle-text">Día</p>
+                <p class="p3-subtitle-value ">Domingo 17 de Noviembre - 16hrs</p>
+                <p class="p3-subtitle-text">Lugar</p>
+                <p class="p3-subtitle-value">Rectoría San Buenaventura</p>
+                <p class="p3-subtitle-text">Dirección</p>
+                <p class="p3-subtitle-value">Av. San Buenaventura #296, col. club de golf, Tlalpan, c.p. 14620, CDMX</p>
+            </div>
+        </div>
+        <div class="p3-container">
+            <div class="p3-info-container">
+                <div class="p3-rings-lottie">
+                    <div id="party-lottie-container"></div>
+                </div>
+                <hr class="p3-title-divider">
+                <p class="p3-title-text">Ceremonia</p>
+                <hr class="p3-title-divider">
+                <p class="p3-subtitle-text">Día</p>
+                <p class="p3-subtitle-value ">Domingo 17 de Noviembre - 16hrs</p>
+                <p class="p3-subtitle-text">Lugar</p>
+                <p class="p3-subtitle-value">Rectoría San Buenaventura</p>
+                <p class="p3-subtitle-text">Dirección</p>
+                <p class="p3-subtitle-value">Av. San Buenaventura #296, col. club de golf, Tlalpan, c.p. 14620, CDMX</p>
+            </div>
+            <div class="p3-map-container">
+                <iframe
+                        class="p3-map-frame"
+                        id="event-maps-frame"
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="CountDownScript.js"></script>
 <script src="QueryParamsScript.js"></script>
+<script src="LottieAnimsScript.js"></script>
+<script src="MapsUrlScript.js"></script>
 </body>
 </html>
