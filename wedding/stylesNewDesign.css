@@ -207,7 +207,7 @@ body {
 
 /*
 * @Styles
-* Section: Church
+* Section: Church & Event
 * ID: p3
 */
 
@@ -219,7 +219,7 @@ body {
     width: 100%;
     margin: 0 auto;
     background-color: #35193A;
-    border-radius: 50px 50px 0 0;
+    border-radius: 30px 30px 0 0;
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
@@ -229,10 +229,11 @@ body {
     justify-content: center;
 }
 
-.p3-rings-lottie {
+.p3-rings-lottie, .p3-party-lottie {
     width: 100px;
     height: 100px;
     margin-bottom: 30px;
+    background-color: white;
 }
 
 .p3-title-text {
@@ -266,7 +267,7 @@ body {
 .p3-map-container {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-top: 70%;
     overflow: hidden;
 }
 
