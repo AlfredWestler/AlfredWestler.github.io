@@ -1,54 +1,154 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
     <style>
-        body {
-            background-image: url("resources/sheet_background.png");
-        }
-        .names {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .logo {
-            background-color: black;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
+        body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.header-part {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background-scrim {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.title-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 24px;
+}
+
+.title-header-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.title-divider {
+    height: 2px;
+    flex-grow: 1;
+    background-color: white;
+    margin: 0 12px;
+}
+
+.title-logo-box {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    color: white;
+    margin: 0;
+}
+
+.title-names-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.ampersand-box {
+    width: 25px;
+    height: 25px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 0;
+}
+
+.ampersand-text {
+    color: white;
+    margin: 0;
+}
+
+.bottom-divider {
+    width: calc(100% - 24px);
+    height: 2px;
+    background-color: white;
+    margin: 12px 0;
+}
+
+.title-quote, .quote-author {
+    font-size: 24px;
+    margin: 12px 0;
+    padding: 0 12px;
+}
+
+.quote-author {
+    font-style: italic;
+}
+
     </style>
-    <title>Title</title>
 </head>
 <body>
-    <div class="names">
-        <p>Andrea</p>
-        <div class="logo">Logo</div>
-        <p>Alfredo</p>
+    <div class="header-part">
+        <img src="resources/wedback.jpeg" alt="Background" class="background-image">
+        <div class="background-scrim"></div>
+        <div class="title-content">
+            <div class="title-header-row">
+                <div class="title-divider"></div>
+                <div class="title-logo-box">
+                    <p class="logo-text">LOGO</p>
+                </div>
+                <div class="title-divider"></div>
+            </div>
+            <div class="title-names-column">
+                <p class="title-name">Alfredo</p>
+                <div class="ampersand-box">
+                    <p class="ampersand-text">&</p>
+                </div>
+                <p class="title-name">Andrea</p>
+            </div>
+            <div class="bottom-divider"></div>
+            <p class="title-quote">
+                "De un corazón malvado el duro remordimiento pocas veces se aleja, la parte malévola se calcina sin las incomodas cadenas de la sentimental introspec- spec- spec- spec..."
+            </p>
+            <p class="quote-author">- Perry el Ornitorrinco</p>
+        </div>
     </div>
-    <div>
-        <p>Query params</p>
-        <p id="input_query"></p>
-    </div>
-
-    <script>
-        function getQueryParam(param) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(param)
-        }
-
-        const id = getQueryParam("id")
-
-        if(id !== null) {
-            document.getElementById("input_query").innerText = `El valor de id es ${id}`;
-        } else {
-            document.getElementById("input_query").innerText = `No se encontró el parámetro "id" en la URL.`;
-        }
-    </script>
 </body>
 </html>
