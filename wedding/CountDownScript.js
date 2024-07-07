@@ -33,7 +33,7 @@ const x = setInterval(
     1000
 );
 
-function showContainer(condition) {
+function showEndContainer(condition) {
 
     const styleSheet = document.styleSheets[0]; // Accede al primer stylesheet (styles.css)
 
@@ -41,12 +41,12 @@ function showContainer(condition) {
         if (styleSheet) {
             // Modifica las regla a none
             styleSheet.insertRule('.p2-count-down { display: flex; }', styleSheet.cssRules.length);
-            styleSheet.insertRule('.p2-finish-count { display: flex; }', styleSheet.cssRules.length);
+            styleSheet.insertRule('.p2-finish-count { display: none; }', styleSheet.cssRules.length);
         }
     } else {
         if (styleSheet) {
             // Modifica las regla a none
-            styleSheet.insertRule('.p2-count-down { display: flex; }', styleSheet.cssRules.length);
+            styleSheet.insertRule('.p2-count-down { display: none; }', styleSheet.cssRules.length);
             styleSheet.insertRule('.p2-finish-count { display: flex; }', styleSheet.cssRules.length);
         }
     }
