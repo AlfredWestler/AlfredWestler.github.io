@@ -288,10 +288,47 @@ body {
     border: 0;
 }
 
-.p4-container {
+/*
+* @Styles
+* Section: Photo Session & Story
+* ID: p4
+*/
+
+.p4-content {
     background-color: #F7F6F3;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    display: flex;
+}
+
+.p4-title-text {
+    font-size: 50px;
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*
+* @Styles
+* Section: About Party, Dress code, Tips & Notes
+* ID: p5
+*/
+
+.p5-content {
+    background-color: #F2EBD8;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+.p5-top-divider {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    margin: 24px 0;
 }
