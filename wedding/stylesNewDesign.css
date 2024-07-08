@@ -306,6 +306,7 @@ body {
 .p4-title-text {
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
     background: linear-gradient(to right, #feb47b, #ff7e5f);
     background-clip: text;
     -webkit-background-clip: text;
@@ -342,7 +343,7 @@ body {
 
 .p4-slider-image {
     max-width: 100%;
-    max-height: 400px;
+    height: 400px;
     border-radius: 10px;
     object-fit: contain;
 }
@@ -416,26 +417,29 @@ body {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    width: auto;
-    padding: 16px;
+    width: 40px; /* Ajusta el tamaño del botón */
+    height: 40px; /* Ajusta el tamaño del botón */
+    line-height: 40px; /* Centra el contenido verticalmente */
     color: white;
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 50%;
     user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
 }
 
 .p4-modal-prev {
     left: 16px; /* Ajuste la posición izquierda */
     transform: translateY(-50%); /* Centra verticalmente */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
 }
 
 .p4-modal-next {
     right: 16px; /* Ajuste la posición derecha */
     transform: translateY(-50%); /* Centra verticalmente */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
 }
 
 /*

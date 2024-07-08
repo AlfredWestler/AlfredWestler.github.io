@@ -48,7 +48,7 @@ function showSlides(index) {
     slides.forEach(slide => slide.classList.remove('p4-slider-item-active'));
     dots.forEach(dot => dot.classList.remove('p4-slider-dot-active'));
 
-    // Mostrar imagen actual y agregar clase active al punto correspondiente
+    // Mostrar imagen actual con fade y agregar clase active al punto correspondiente
     slides[index].classList.add('p4-slider-item-active');
     dots[index].classList.add('p4-slider-dot-active');
 }
