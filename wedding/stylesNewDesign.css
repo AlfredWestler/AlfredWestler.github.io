@@ -595,7 +595,7 @@ body {
     transform: scale(0.97);
   }
   
-  /* Código responsivo */
+  /* Código responsivo
   @media screen and (max-width: 790px) {
     .p5-container .p5-center-line {
       left: 40px;
@@ -628,7 +628,7 @@ body {
     .p5-container .p5-row {
       margin: 10px 0;
     }
-  }
+  }*/
 
   .p5-svg {
     width: 1em; /* Tamaño del ícono */
