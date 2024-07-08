@@ -71,7 +71,9 @@
             <p class="p3-subtitle-text">Lugar</p>
             <p class="p3-subtitle-value">Rectoría San Buenaventura</p>
             <p class="p3-subtitle-text">Dirección</p>
-            <p class="p3-subtitle-value">Av. San Buenaventura #296, col. club de golf, Tlalpan, c.p. 14620, CDMX</p>
+            <a class="p3-subtitle-value"
+                href="https://www.google.com.mx/maps/place/Rector%C3%ADa+San+Buenaventura/@19.2751862,-99.1604455,17z/data=!3m1!4b1!4m6!3m5!1s0x85ce011d94f96431:0x47c2d7f2e07ae1cd!8m2!3d19.2751862!4d-99.1578706!16s%2Fg%2F11c3sx7jf2?entry=ttu"
+            >Av. San Buenaventura #296, col. club de golf, Tlalpan, c.p. 14620, CDMX</a>
             <div class="p3-map-container">
                 <iframe
                         class="p3-map-frame"
@@ -90,12 +92,14 @@
             <p class="p3-title-text">Celebración</p>
             <hr class="p3-title-divider">
             <p class="p3-subtitle-value ">Despues de la misa acompañanos a seguir la fiesta!</p>
-            <p class="p3-subtitle-text">Hora</p>
-            <p class="p3-subtitle-value">Recepción: 6:30 PM</p>
+            <p class="p3-subtitle-text">Recepción</p>
+            <p class="p3-subtitle-value">18:30 hrs</p>
             <p class="p3-subtitle-text">Lugar</p>
             <p class="p3-subtitle-value">Salones de Eventos Cabaña Encantada</p>
             <p class="p3-subtitle-text">Dirección</p>
-            <p class="p3-subtitle-value">La Felicidad 27, Tlalpan, San Miguel Ajusco, c.p. 14700, CDMX</p>
+            <a class="p3-subtitle-value" 
+                href="https://www.google.com.mx/maps/place/Salones+de+Eventos+Caba%C3%B1a+Encantada/@19.2295242,-99.1969413,17z/data=!3m1!4b1!4m6!3m5!1s0x85cdfdf75ba6dab3:0xc2efda4bc94ba16!8m2!3d19.2295242!4d-99.1943664!16s%2Fg%2F11bbrq9jq_?entry=ttu"
+            >La Felicidad 27, Tlalpan, San Miguel Ajusco, c.p. 14700, CDMX</a>
             <div class="p3-map-container">
                 <iframe
                         class="p3-map-frame"
@@ -109,8 +113,19 @@
         </div>
     </div>
     <div class="p4-content">
-        <p class="p4-title-text">Nuestras fotitos</p>
-        <div>modal de fotos</div>
+        <p class="p4-title-text">Nuestros momentos</p>
+        <div class="p4-slider-container">
+            <div class="p4-slider-component" id="slider-component"></div>
+        </div>
+        <div class="p4-slider-dots-content" id="slider-dots-content"></div>
+        <div id="imageModal" class="p4-modal">
+            <div class="p4-modal-content">
+                <span class="p4-modal-close">&times;</span>
+                <button class="p4-modal-prev">&#10094;</button>
+                <img class="p4-modal-image" id="modalImage" src="" alt="Modal Image">
+                <button class="p4-modal-next">&#10095;</button>
+            </div>
+        </div>
         <p class="p4-title-text">Conoce nuestra historia</p>
         <div>Time Story</div>
     </div>
@@ -147,5 +162,6 @@
 <script src="QueryParamsScript.js"></script>
 <script src="LottieAnimsScript.js"></script>
 <script src="MapsUrlScript.js"></script>
+<script src="SliderImagesScript.js"></script>
 </body>
 </html>
