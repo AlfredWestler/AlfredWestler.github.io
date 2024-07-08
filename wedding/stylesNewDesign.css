@@ -595,7 +595,7 @@ body {
     transform: scale(0.97);
   }
   
-  /* Código responsivo
+  
   @media screen and (max-width: 790px) {
     .p5-container .p5-center-line {
       left: 40px;
@@ -619,16 +619,26 @@ body {
   }
   
   @media screen and (max-width: 440px) {
-    .p5-container .p5-center-line,
-    .p5-row section::before,
-    .p5-row section .p5-icon {
-      display: none;
-    }
+    .p5-container .p5-center-line {
+        left: 40px;
+      }
+    
+      .p5-container .p5-row section {
+        width: 100%;
+      }
+    
+      .p5-first section .p5-icon {
+        left: -60px;
+      }
+    
+      .p5-first section::before {
+        left: -7px;
+      }
   
     .p5-container .p5-row {
       margin: 10px 0;
     }
-  }*/
+  }
 
   .p5-svg {
     width: 1em; /* Tamaño del ícono */
