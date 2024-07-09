@@ -248,9 +248,10 @@ body {
 }
 
 .p3-rings-lottie, .p3-party-lottie {
-    width: 70%;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     margin-bottom: 30px;
+    color: black;
 }
 
 .p3-title-text {

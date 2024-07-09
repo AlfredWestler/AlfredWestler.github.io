@@ -12,7 +12,7 @@ const ringsAnimation = lottie.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'resources/data_net_anim.json'
+    path: 'resources/Campanas.json'
 });
 
 const partyAnimation = lottie.loadAnimation({
@@ -21,4 +21,12 @@ const partyAnimation = lottie.loadAnimation({
     loop: true,
     autoplay: true,
     path: 'resources/data_net_anim.json'
+});
+
+const newAnimation = lottie.loadAnimation({
+    container: document.getElementById('just-lottie'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'resources/Campanas.json'
 });
