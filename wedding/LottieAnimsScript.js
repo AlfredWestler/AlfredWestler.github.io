@@ -20,7 +20,7 @@ const partyAnimation = lottie.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'resources/data_net_anim.json'
+    path: 'resources/Globos.json'
 });
 
 const newAnimation = lottie.loadAnimation({
