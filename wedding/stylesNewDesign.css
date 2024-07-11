@@ -596,7 +596,7 @@ body {
   }
   
   
-  @media screen and (max-width: 790px) {
+  @media screen and (max-width: 600px) {
     .p5-container .p5-center-line {
       left: 40px;
     }
@@ -615,28 +615,6 @@ body {
   
     .p5-first section::before {
       left: -7px;
-    }
-  }
-  
-  @media screen and (max-width: 440px) {
-    .p5-container .p5-center-line {
-        left: 40px;
-      }
-    
-      .p5-container .p5-row section {
-        width: 100%;
-      }
-    
-      .p5-first section .p5-icon {
-        left: -60px;
-      }
-    
-      .p5-first section::before {
-        left: -7px;
-      }
-  
-    .p5-container .p5-row {
-      margin: 10px 0;
     }
   }
 
