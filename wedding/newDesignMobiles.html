@@ -158,7 +158,6 @@
                 </div>
                 <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
                 <div class="p5-bottom">
-                  <a href="#">Read more</a>
                   <i>- Famous One</i>
                 </div>
               </section>
@@ -172,7 +171,6 @@
                 </div>
                 <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
                 <div class="p5-bottom">
-                  <a href="#">Read more</a>
                   <i>- Famous One</i>
                 </div>
               </section>
@@ -186,7 +184,6 @@
                 </div>
                 <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
                 <div class="p5-bottom">
-                  <a href="#">Read more</a>
                   <i>- Famous One</i>
                 </div>
               </section>
@@ -200,7 +197,6 @@
                 </div>
                 <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
                 <div class="p5-bottom">
-                  <a href="#">Read more</a>
                   <i>- Famous One</i>
                 </div>
               </section>
@@ -214,7 +210,6 @@
                 </div>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat tempora necessitatibus laboriosam deleniti repellendus? Dolorem odit aut ea repellat id sed.</p>
                 <div class="p5-bottom">
-                  <a href="#">Read more</a>
                   <i>- Famous One</i>
                 </div>
               </section>
@@ -222,14 +217,65 @@
           </div>
         <p>Y esto continuará</p>
     </div>
-    <div class="p5-content">
-        <div class="p5-top-divider"></div>
-        <p class="p3-title-text">Fiesta</p>
-        <p>Hagamos que nuestra fiesta este bien mamalona</p>
-        <div>Card Detalles de la musica y recomendaciones</div>
-        <div>Card Dress code</div>
-        <div>Card Tips y notas (ej. Llevar abrigo porque hará mucho frio)</div>
-        <div class="p5-top-divider"></div>
+    <div class="p6-content">
+        <div class="p6-top-divider"></div>
+        <p class="p6-title-text">Fiesta</p>
+        <p class="p6-subtitle-value">Hagamos que nuestra fiesta este bien mamalona</p>
+        <div class="p6-card">
+            <div class="p6-card-header">
+                <h2>Música</h2>
+            </div>
+            <div class="p6-icon-container">
+                <img src="calendar-icon.png" alt="Icono de Música" class="p6-icon">
+            </div>
+            <div class="p6-description">
+                <p>Una orientación para tu vestuario</p>
+            </div>
+            <div class="p6-expandable-content" id="p6-expandable-music">
+                <p>Lorem impsum bla bla bla jasfdufbnadflhvbljadfvjhv shdvblahdbfhv dsBVLHBSDLHVAKHDSV SDHVBKHADB FHKV KAHFDBVKHJA DHBVHADBHVJADHSVB BFLAUVBLAFBLVTBVU VFBLHSFBVBSFHBVKLAFL VAHBLHJFLAJ</p>
+            </div>
+            <div class="p6-button-container">
+                <button id="p6-button-music" onclick="p6MusicContent()">Ver mas</button>
+            </div>
+        </div>
+        <div class="p6-card">
+            <div class="p6-card-header">
+                <h2>Dress Code</h2>
+            </div>
+            <div class="p6-icon-container">
+                <img src="calendar-icon.png" alt="Icono Dress code" class="p6-icon">
+            </div>
+            <div class="p6-description">
+                <p>Una orientación para tu vestuario</p>
+            </div>
+            <div class="p6-expandable-content" id="p6-expandable-dress">
+                <p>Lorem impsum bla bla bla jasfdufbnadflhvbljadfvjhv shdvblahdbfhv dsBVLHBSDLHVAKHDSV SDHVBKHADB FHKV KAHFDBVKHJA DHBVHADBHVJADHSVB BFLAUVBLAFBLVTBVU VFBLHSFBVBSFHBVKLAFL VAHBLHJFLAJ</p>
+            </div>
+            <div class="p6-button-container">
+                <button id="p6-button-dress" onclick="p6DressCodeContent()">Ver mas</button>
+            </div>
+        </div>
+        <div class="p6-card">
+            <div class="p6-card-header">
+                <h2>Tips & Notas</h2>
+            </div>
+            <div class="p6-icon-container">
+                <img src="calendar-icon.png" alt="Icono de Tips y notas" class="p6-icon">
+            </div>
+            <div class="p6-description">
+                <p>Una orientación para tu vestuario</p>
+            </div>
+            <div class="p6-expandable-content" id="p6-expandable-tips">
+                <p>Lorem impsum bla bla bla jasfdufbnadflhvbljadfvjhv shdvblahdbfhv dsBVLHBSDLHVAKHDSV SDHVBKHADB FHKV KAHFDBVKHJA DHBVHADBHVJADHSVB BFLAUVBLAFBLVTBVU VFBLHSFBVBSFHBVKLAFL VAHBLHJFLAJ</p>
+            </div>
+            <div class="p6-button-container">
+                <button id="p6-button-tips" onclick="p6TipsContent()">Ver mas</button>
+            </div>
+        </div>
+        <hr>
+        <hr>
+        <hr>
+        <div class="p6-top-divider"></div>
     </div>
     <div class="p4-content">
         <p class="p4-title-text">Regalos</p>
@@ -259,5 +305,6 @@
 <script src="LottieAnimsScript.js"></script>
 <script src="MapsUrlScript.js"></script>
 <script src="SliderImagesScript.js"></script>
+<script src="CardToggleScript.js"></script>
 </body>
 </html>
