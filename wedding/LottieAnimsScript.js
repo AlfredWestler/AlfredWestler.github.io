@@ -23,8 +23,8 @@ const partyAnimation = lottie.loadAnimation({
     path: 'resources/Globos.json'
 });
 
-const newAnimation = lottie.loadAnimation({
-    container: document.getElementById('just-lottie'),
+const mainAnimation = lottie.loadAnimation({
+    container: document.getElementById('main-lottie-container'),
     renderer: 'svg',
     loop: true,
     autoplay: true,
