@@ -7,7 +7,6 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
@@ -26,6 +25,7 @@ body {
     display: inline;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 /*
