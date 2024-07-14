@@ -682,6 +682,9 @@ body {
 .p6-button-container {
     text-align: center;
     padding-top: 12px;
+    padding-bottom: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .p6-button-container button {
