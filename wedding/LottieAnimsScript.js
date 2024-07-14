@@ -28,5 +28,5 @@ const newAnimation = lottie.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'resources/Campanas.json'
+    path: 'resources/Logo.json'
 });
