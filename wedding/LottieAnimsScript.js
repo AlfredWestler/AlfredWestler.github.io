@@ -30,3 +30,11 @@ const mainAnimation = lottie.loadAnimation({
     autoplay: true,
     path: 'resources/Logo.json'
 });
+
+const albumAnimation = lottie.loadAnimation({
+    container: document.getElementById('album-lottie-content'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'resources/Photo.json'
+});
