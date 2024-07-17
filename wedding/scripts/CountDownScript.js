@@ -25,9 +25,9 @@ const x = setInterval(
         // Si la cuenta regresiva ha terminado, muestra un mensaje
         if (difference < 0) {
             clearInterval(x);
-            showContainer(false)
+            showEndContainer(false)
         } else {
-            showContainer(true)
+            showEndContainer(true)
         }
     },
     1000

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/stylesNewDesign.css" type="text/css">
     <title>Wedding Invite Mobiles</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"></script>
+    <script type="module" src="scripts/FirebaseConfigScript.js"></script>
 </head>
 <body>
 <div class="fullContainer">
@@ -310,11 +311,13 @@
         <div class="p6-top-divider"></div>
     </div>
     <div class="p4-content">
-        <p class="p4-title-text">Te esperamos</p>
+        <p class="p4-title-text">Los esperamos</p>
+        <p id="guestName" class="p4-title-text"></p>
         <div>De ante mano te gradecemos por ser una parte importante en nuestras vidas y esperamos que puedas confirmarnos tu asistencia</div>
-        <div>Boton "Simon si jalo"</div>
-        <div>Boton "Lo siento no puedo"</div>
+        <button id="confirm_yes">Simon, Jaloween</button>
+        <button id="confirm_no">Boton "Lo siento no puedo"</button>
     </div>
+    <button id="add_document">Add doc</button>
 </div>
 <script src="scripts/CardToggleScript.js"></script>
 <script src="scripts/CountDownScript.js"></script>
