@@ -102,7 +102,7 @@ document.getElementById('confirm_no').onclick = async function() {
     }
 }
 
-document.getElementById('add_document').onclick = addNewGuest();
+document.getElementById('add_document').onclick = addNewGuest;
 
 // Cargar los usuarios al cargar la página
 window.onload = getGuest;
