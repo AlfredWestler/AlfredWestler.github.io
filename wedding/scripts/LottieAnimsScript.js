@@ -38,3 +38,19 @@ const albumAnimation = lottie.loadAnimation({
     autoplay: true,
     path: 'resources/Photo.json'
 });
+
+const musicCardAnimation = lottie.loadAnimation({
+    container: document.getElementById('music_card'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'resources/Music.json'
+});
+
+const tipsCardAnimation = lottie.loadAnimation({
+    container: document.getElementById('tips_card'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'resources/Notes.json'
+});
