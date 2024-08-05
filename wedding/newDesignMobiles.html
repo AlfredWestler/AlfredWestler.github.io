@@ -68,6 +68,9 @@
             <a class="p3-subtitle-value"
                 href="https://www.google.com.mx/maps/place/Rector%C3%ADa+San+Buenaventura/@19.2751862,-99.1604455,17z/data=!3m1!4b1!4m6!3m5!1s0x85ce011d94f96431:0x47c2d7f2e07ae1cd!8m2!3d19.2751862!4d-99.1578706!16s%2Fg%2F11c3sx7jf2?entry=ttu"
             >Av. San Buenaventura #296, col. club de golf, Tlalpan, c.p. 14620, CDMX</a>
+            <p>
+            <p>
+            <p> 
             <div class="p3-map-container">
                 <iframe
                         class="p3-map-frame"
@@ -94,6 +97,9 @@
             <a class="p3-subtitle-value" 
                 href="https://www.google.com.mx/maps/place/Salones+de+Eventos+Caba%C3%B1a+Encantada/@19.2295242,-99.1969413,17z/data=!3m1!4b1!4m6!3m5!1s0x85cdfdf75ba6dab3:0xc2efda4bc94ba16!8m2!3d19.2295242!4d-99.1943664!16s%2Fg%2F11bbrq9jq_?entry=ttu"
             >La Felicidad 27, Tlalpan, San Miguel Ajusco, c.p. 14700, CDMX</a>
+            <p>
+            <p>
+            <p>
             <div class="p3-map-container">
                 <iframe
                         class="p3-map-frame"
@@ -223,10 +229,23 @@
                 <div id="music_card" class="p6-icon"></div>
             </div>
             <div class="p6-description">
-                <p>Una orientación para tu vestuario</p>
+                <p>¿Qué estará amenizando el evento?</p>
             </div>
             <div class="p6-expandable-content" id="p6-expandable-music">
-                <p>Lorem impsum bla bla bla jasfdufbnadflhvbljadfvjhv shdvblahdbfhv dsBVLHBSDLHVAKHDSV SDHVBKHADB FHKV KAHFDBVKHJA DHBVHADBHVJADHSVB BFLAUVBLAFBLVTBVU VFBLHSFBVBSFHBVKLAFL VAHBLHJFLAJ</p>
+                <p>·Grupo versatil: Estará presente durante todo el evento</p>
+                <p>·Mariachis: Nos acompañaran durante la cena</p>
+                <br>
+                <br>
+                <div>
+                    <h2 style="color: #333;">¿Qué canción no puede faltar?</h2>
+                    <br>
+                    <div class="p6-form-group">
+                        <input type="text" id="song" placeholder=" " required>
+                        <label for="song">Recomiéndanos una canción, grupo o genero</label>
+                    </div>
+                    <br>
+                    <button class="p6-btn" id="p6-music-submit">Enviar</button>
+                </div>
             </div>
             <div class="p6-button-container">
                 <button id="p6-button-music" onclick="p6MusicContent()">Ver mas</button>
@@ -261,10 +280,15 @@
                 <div id="tips_card" class="p6-icon"></div>
             </div>
             <div class="p6-description">
-                <p>Una orientación para tu vestuario</p>
+                <p>Lee nuestra catedra aqui abajo</p>
             </div>
             <div class="p6-expandable-content" id="p6-expandable-tips">
-                <p>Lorem impsum bla bla bla jasfdufbnadflhvbljadfvjhv shdvblahdbfhv dsBVLHBSDLHVAKHDSV SDHVBKHADB FHKV KAHFDBVKHJA DHBVHADBHVJADHSVB BFLAUVBLAFBLVTBVU VFBLHSFBVBSFHBVKLAFL VAHBLHJFLAJ</p>
+                <ul>
+                    <li style="text-align: justify;">Si tomas no manejes: Recuerda que vamos al ajusco y tomaremos carretera, evitemos accidentes</li>
+                    <li style="text-align: justify;">Hará frio: Así que considera llavarte una buena chamarra</li>
+                    <li style="text-align: justify;">LLeva efectivo: Estamos seguros de que lo necesitarás 😉</li>
+                    <li style="text-align: justify;">Trae tu mejor actitud: Disfruta con nosotros este día</li>
+                </ul>
             </div>
             <div class="p6-button-container">
                 <button id="p6-button-tips" onclick="p6TipsContent()">Ver mas</button>
@@ -318,19 +342,6 @@
         <button id="confirm_no">Boton "Lo siento no puedo"</button>
     </div>
     <button id="add_document">Add doc</button>
-    <div>
-        <iframe
-            style="width: 100%; height: auto; aspect-ratio: 1 / 1;"
-            loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAsl_wF89EpRrIYJ1-nxn70zPk_Jt2SpuQ&q=Salones+de+Eventos+Cabaña+Encantada"
-        ></iframe>
-    </div>
-    <div>
-        <p id="example_maps_api" style="color: black"></p>
-    </div>
 </div>
 <script src="scripts/CardToggleScript.js"></script>
 <script src="scripts/CountDownScript.js"></script>

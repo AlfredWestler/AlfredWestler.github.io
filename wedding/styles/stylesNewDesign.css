@@ -634,6 +634,7 @@ body {
     font-size: 24px;
     margin-top: 5px;
     color: #feb47b;
+    text-align: center;
 }
 
 .p6-card {
@@ -699,4 +700,62 @@ body {
 
 .p6-button-container button:hover {
     background-color: #0a8c58;
+}
+
+.p6-form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.p6-form-group input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.p6-form-group input:focus {
+    border-color: #666;
+}
+
+.p6-form-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+    background: white;
+    padding: 0 5px;
+}
+
+.p6-form-group input:focus + label,
+.p6-form-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    color: #666;
+    font-size: 12px;
+    background: white;
+    padding: 0 5px;
+}
+
+.p6-form-group input::placeholder {
+    color: transparent;
+}
+
+.p6-btn {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.p6-btn:hover {
+    background: #218838;
 }

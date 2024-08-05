@@ -3,267 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Vertical Timeline Design By AbdulDev</title>
-    <!-- Custom CSS Link -->
+    <title>Recomendaciones de Canciones</title>
     <style>
-        .p5-container, .p5-container *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-html{
-  scroll-behavior: smooth;
-}
-body{
-  background: #2D9596;
-}
-.p5-container {
-  max-width: 1080px;
-  margin: 50px auto;
-  padding: 0 20px;
-  position: relative;
-}
-
-.p5-container .p5-center-line {
-  position: absolute;
-  height: 100%;
-  width: 4px;
-  background: #fff;
-  left: 50%;
-  top: 20px;
-  transform: translateX(-50%);
-}
-
-.p5-container .p5-row {
-  display: flex;
-}
-
-.p5-container .p5-first {
-  justify-content: flex-start;
-}
-
-.p5-container .p5-second {
-  justify-content: flex-end;
-}
-
-.p5-container .p5-row section {
-  background: #fff;
-  border-radius: 5px;
-  width: calc(50% - 40px);
-  padding: 20px;
-  position: relative;
-}
-
-.p5-container .p5-row section::before {
-  position: absolute;
-  content: "";
-  height: 15px;
-  width: 15px;
-  background: #fff;
-  top: 28px;
-  z-index: -1;
-  transform: rotate(45deg);
-}
-
-.p5-first section::before {
-  right: -7px;
-}
-
-.p5-second section::before {
-  left: -7px;
-}
-
-.p5-row section .p5-icon,
-.p5-center-line .p5-scroll-icon {
-  position: absolute;
-  background: #f2f2f2;
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #2D9596;
-  font-size: 17px;
-  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-}
-
-.p5-center-line .p5-scroll-icon {
-  bottom: 0px;
-  left: 50%;
-  font-size: 25px;
-  transform: translateX(-50%);
-}
-
-.p5-first section .p5-icon {
-  top: 15px;
-  right: -60px;
-}
-
-.p5-second section .p5-icon {
-  top: 15px;
-  left: -60px;
-}
-
-.p5-row section .p5-details,
-.p5-row section .p5-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.p5-row section .p5-details .p5-title {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.p5-row section p {
-  margin: 10px 0 17px 0;
-}
-
-.p5-row section .p5-bottom a {
-  text-decoration: none;
-  background: #2D9596;
-  color: #fff;
-  padding: 7px 15px;
-  border-radius: 5px;
-  font-weight: 400;
-  transition: all 0.3s ease;
-}
-
-.p5-row section .p5-bottom a:hover {
-  transform: scale(0.97);
-}
-
-/* Código responsivo */
-@media screen and (max-width: 790px) {
-  .p5-container .p5-center-line {
-    left: 40px;
-  }
-
-  .p5-container .p5-row {
-    margin: 30px 0 3px 60px;
-  }
-
-  .p5-container .p5-row section {
-    width: 100%;
-  }
-
-  .p5-first section .p5-icon {
-    left: -60px;
-  }
-
-  .p5-first section::before {
-    left: -7px;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .p5-container .p5-center-line,
-  .p5-row section::before,
-  .p5-row section .p5-icon {
-    display: none;
-  }
-
-  .p5-container .p5-row {
-    margin: 10px 0;
-  }
-}
-
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            padding-left: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-group input:focus {
+            border-color: #666;
+        }
+        .form-group label {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #aaa;
+            pointer-events: none;
+            transition: all 0.2s ease-out;
+        }
+        .form-group input:focus + label,
+        .form-group input:not(:placeholder-shown) + label {
+            top: -10px;
+            left: 10px;
+            color: #666;
+            font-size: 12px;
+            background: #fff;
+            padding: 0 5px;
+        }
+        .form-group input::placeholder {
+            color: transparent;
+        }
+        .btn {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #218838;
+        }
     </style>
 </head>
 <body>
-    <div class="p5-container">
-        <div class="p5-center-line">
-          <a href="#" class="p5-scroll-icon">
-            <i class="custom-caret-up"></i>
-          </a>
+    <div class="container">
+        <h2>¿Qué canción no puede faltar?</h2>
+        <div class="form-group">
+            <input type="text" id="song" placeholder=" " required>
+            <label for="song">Recomiéndanos una canción</label>
         </div>
-        <div class="p5-row p5-first">
-          <section>
-            <i class="p5-icon custom-home"></i>
-            <div class="p5-details">
-              <span class="p5-title">Header of Section 1</span>
-              <span>1st Feb 2024</span>
-            </div>
-            <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-            <div class="p5-bottom">
-              <a href="#">Read more</a>
-              <i>- Famous One</i>
-            </div>
-          </section>
-        </div>
-        <div class="p5-row p5-second">
-          <section>
-            <i class="p5-icon custom-star"></i>
-            <div class="p5-details">
-              <span class="p5-title">Header of Section 2</span>
-              <span>2nd Feb 2024</span>
-            </div>
-            <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-            <div class="p5-bottom">
-              <a href="#">Read more</a>
-              <i>- Famous One</i>
-            </div>
-          </section>
-        </div>
-        <div class="p5-row p5-first">
-          <section>
-            <i class="p5-icon custom-rocket"></i>
-            <div class="p5-details">
-              <span class="p5-title">Header of Section 3</span>
-              <span>3rd Feb 2024</span>
-            </div>
-            <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-            <div class="p5-bottom">
-              <a href="#">Read more</a>
-              <i>- Famous One</i>
-            </div>
-          </section>
-        </div>
-        <div class="p5-row p5-second">
-          <section>
-            <i class="p5-icon custom-globe"></i>
-            <div class="p5-details">
-              <span class="p5-title">Header of Section 4</span>
-              <span>4th Feb 2024</span>
-            </div>
-            <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-            <div class="p5-bottom">
-              <a href="#">Read more</a>
-              <i>- Famous One</i>
-            </div>
-          </section>
-        </div>
-        <div class="p5-row p5-first">
-          <section>
-            <i class="p5-icon custom-paper-plane"></i>
-            <div class="p5-details">
-              <span class="p5-title">Header of Section 5</span>
-              <span>5th Feb 2024</span>
-            </div>
-            <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-            <div class="p5-bottom">
-              <a href="#">Read more</a>
-              <i>- Famous One</i>
-            </div>
-          </section>
-        </div>
-        <div class="p5-row p5-second">
-          <section>
-            <i class="p5-icon custom-map-marker-alt"></i>
-            <div class="p5-details">
-              <span class="p5-title">Header of Section 6</span>
-              <span>6th Feb 2024</span>
-            </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat tempora necessitatibus laboriosam deleniti repellendus? Dolorem odit aut ea repellat id sed.</p>
-            <div class="p5-bottom">
-              <a href="#">Read more</a>
-              <i>- Famous One</i>
-            </div>
-          </section>
-        </div>
-      </div>
-      
- </body>
+        <button class="btn" onclick="submitRecommendation()">Enviar</button>
+    </div>
+
+    <script>
+        function submitRecommendation() {
+            const songInput = document.getElementById('song');
+            const song = songInput.value.trim();
+            if (song) {
+                alert(`¡Gracias por tu recomendación: ${song}!`);
+                songInput.value = '';
+            } else {
+                alert('Por favor, recomienda una canción.');
+            }
+        }
+    </script>
+</body>
 </html>

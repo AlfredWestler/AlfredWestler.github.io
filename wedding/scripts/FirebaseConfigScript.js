@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
-import { getFirestore, collection, addDoc, getDocs, doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js";
+import { getFirestore, collection, addDoc, getDocs, doc, getDoc, updateDoc, setDoc } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAsl_wF89EpRrIYJ1-nxn70zPk_Jt2SpuQ",
@@ -103,6 +103,36 @@ document.getElementById('confirm_no').onclick = async function() {
 }
 
 document.getElementById('add_document').onclick = addNewGuest;
+
+document.getElementById('p6-music-submit').onclick = submitRecommendation;
+
+async function submitRecommendation() {
+    const songInput = document.getElementById('song');
+    const song = songInput.value.trim();
+    if (song) {
+        try {
+            // Asume que tienes un documento de ID específico en la colección "Guests"
+            const guestId = "06OFMOB9JyieQL6PhjQ5"; // Cambia esto al ID del documento que desees
+            const docRef = doc(db, 'Guest', guestId);
+            const docSnap = await getDoc(docRef);
+
+            if (!docSnap.exists()) {
+                throw new Error("El documento no existe!");
+            } else {
+                const existingData = docSnap.data();
+                const newSongsArray = existingData.songs || [];
+                newSongsArray.push(song);
+                await updateDoc(docRef, { songs: newSongsArray });
+            }
+            alert(`¡Gracias por tu recomendación: ${song}!`);
+            songInput.value = '';
+        } catch (error) {
+            console.error("Error agregando la canción: ", error);
+        }
+    } else {
+        alert('Por favor, recomienda una canción.');
+    }
+}
 
 // Cargar los usuarios al cargar la página
 window.onload = getGuest;
