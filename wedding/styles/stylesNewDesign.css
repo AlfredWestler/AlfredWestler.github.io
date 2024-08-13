@@ -207,7 +207,7 @@ body {
 }
 
 .p3-container {
-    width: 100%;
+    width: calc(100% - 24px);
     margin: 0 auto;
     background: linear-gradient(to right, #F2EBE2, #F2EBE2, #F2EBE2, #F2EBE2);/*linear-gradient(to right, #F9F295, #E0AA3E, #E0AA3E, #B88A44);*/
     box-sizing: border-box;
