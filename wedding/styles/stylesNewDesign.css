@@ -5,6 +5,13 @@
     --font-family: sans-serif;
 }
 
+@font-face {
+    font-family: 'TheMainsthen';
+    src: url('fonts/TheMainsthen.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -231,12 +238,13 @@ body {
 }
 
 .p3-title-text {
-    font-size: 40px;
+    font-size: 80px;
     font-weight: bold;
     background: linear-gradient(to right, #D2AC47, #E0AA3E, #E0AA3E, #B88A44);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: 'TheMainsthen'
 }
 
 .p3-title-divider {
