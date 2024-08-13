@@ -117,7 +117,7 @@ body {
 
 .p2-content {
     width: 100%;
-    background-color: #F7F6F3; /*#06355a*/
+    background-color: transparent; /*#06355a*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -142,7 +142,7 @@ body {
     text-align: center;
     font-size: 32px;
     font-weight: bold;
-    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    background: white;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -151,16 +151,16 @@ body {
 .p2-table-params {
     padding: 10px;
     text-align: center;
-    color: #feb47b;
+    color: white;
 }
 
 .p2-table-border {
-    border-right: 2px solid yellow;
+    border-right: 2px solid white;
 }
 
 .p2-title-text {
     font-size: 50px;
-    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    background: white;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -209,15 +209,15 @@ body {
 .p3-container {
     width: 100%;
     margin: 0 auto;
-    background-color: #F2EBD8; /*#35193A*/
-    border-radius: 30px 30px 30px 30px;
-    padding: 20px;
+    background: linear-gradient(to right, #F2EBE2, #F2EBE2, #F2EBE2, #F2EBE2);/*linear-gradient(to right, #F9F295, #E0AA3E, #E0AA3E, #B88A44);*/
     box-sizing: border-box;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 8px solid #C1B59F; /* Tamaño del borde */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
 .p3-rings-lottie, .p3-party-lottie {
@@ -229,7 +229,7 @@ body {
 .p3-title-text {
     font-size: 40px;
     font-weight: bold;
-    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    background: linear-gradient(to right, #D2AC47, #E0AA3E, #E0AA3E, #B88A44);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -244,7 +244,7 @@ body {
 .p3-subtitle-text {
     font-size: 32px;
     margin-top: 20px;
-    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    background: linear-gradient(to right, #D2AC47, #E0AA3E, #E0AA3E, #B88A44);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -253,7 +253,7 @@ body {
 .p3-subtitle-value {
     font-size: 24px;
     margin-top: 5px;
-    color: #feb47b;
+    color: black
 }
 
 .p3-map-container {
