@@ -6,8 +6,15 @@
 }
 
 @font-face {
-    font-family: 'TheMainsthen';
-    src: url('fonts/TheMainsthen.otf') format('opentype');
+    font-family: 'Athena';
+    src: url('fonts/Athena.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cathena';
+    src: url('fonts/Cathena.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -286,11 +293,13 @@ body {
 .p3-title-text {
     font-size: 80px;
     font-weight: bold;
-    background: white;/*linear-gradient(to right, #D2AC47, #E0AA3E, #E0AA3E, #B88A44);*/
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'TheMainsthen'
+    color: white;
+    font-family: 'Athena';
+    text-shadow: 
+                -1px -1px 0 #000,  
+                1px -1px 0 #000,   
+                -1px 1px 0 #000,   
+                1px 1px 0 #000;
 }
 
 .p3-title-divider {
@@ -300,18 +309,25 @@ body {
 }
 
 .p3-subtitle-text {
-    font-size: 32px;
+    font-size: 52px;
     margin-top: 20px;
-    background: linear-gradient(to right, #D2AC47, #E0AA3E, #E0AA3E, #B88A44);
+    background: linear-gradient(to right, #57370D, #E5BF5E, #57370D);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: 'Athena';
 }
 
 .p3-subtitle-value {
     font-size: 24px;
     margin-top: 5px;
-    color: black
+    color: black;
+    font-family: 'Cathena';
+    text-shadow: 
+                -1px -1px 0 #F5F5DC,  
+                1px -1px 0 #F5F5DC,   
+                -1px 1px 0 #F5F5DC,   
+                1px 1px 0 #F5F5DC;
 }
 
 .p3-map-container {
