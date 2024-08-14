@@ -319,6 +319,7 @@ body {
 }
 
 .p3-subtitle-value {
+    width: 100%;
     font-size: 24px;
     margin-top: 5px;
     color: black;
