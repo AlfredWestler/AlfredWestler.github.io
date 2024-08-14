@@ -297,7 +297,10 @@ body {
 }
 
 .p3-title-text {
-    font-size: 60px;
+    font-size: 10vw; 
+    width: 90%; 
+    margin: 0 auto;
+    margin-top: 20px;
     font-weight: bold;
     color: white;
     font-family: 'Athena';
