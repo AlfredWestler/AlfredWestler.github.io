@@ -187,7 +187,7 @@ body {
 
 .p1-text-date {
     color: white;
-    font-size: 3vw; 
+    font-size: 5vw; 
     width: 100%; 
     margin: 0 auto;
     font-family: 'Cathena';
@@ -224,7 +224,7 @@ body {
 .p2-table-values {
     padding: 10px;
     text-align: center;
-    font-size: 2vw; 
+    font-size: 6vw; 
     width: auto; 
     margin: 0 auto;
     font-weight: bold;
@@ -238,7 +238,7 @@ body {
     padding: 10px;
     text-align: center;
     color: white;
-    font-size: 2vw; 
+    font-size: 6vw; 
     width: auto; 
     margin: 0 auto;
 }
@@ -248,7 +248,7 @@ body {
 }
 
 .p2-title-text {
-    font-size: 5vw; 
+    font-size: 8vw; 
     width: 90%; 
     margin: 0 auto;
     background: white;
@@ -405,10 +405,10 @@ body {
     color: black;
     font-family: 'Cathena';
     text-shadow: 
-                -1px -1px 0 #F5F5DC,  
-                1px -1px 0 #F5F5DC,   
-                -1px 1px 0 #F5F5DC,   
-                1px 1px 0 #F5F5DC;
+                -1px -1px 0 white,  
+                1px -1px 0 white,   
+                -1px 1px 0 white,   
+                1px 1px 0 white;
 }
 
 .p3-map-container {
