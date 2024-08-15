@@ -780,13 +780,18 @@ body {
 }
 
 .p6-title-text {
-
+    font-size: 10vw; 
+    width: 90%; 
+    margin: 0 auto;
+    text-align: center;
     font-weight: bold;
-    background: white;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
+    color: white;
+    font-family: 'Athena';
+    text-shadow: 
+                -1px -1px 0 darkslategray,  
+                1px -1px 0 darkslategray,   
+                -1px 1px 0 darkslategray,   
+                1px 1px 0 darkslategray;
 }
 
 .p6-subtitle-value {
