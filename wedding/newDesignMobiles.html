@@ -10,16 +10,29 @@
 </head>
 <body>
 <div class="topbar">
-    <div class="menu-icon">
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="dropdown">
+        <div class="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="dropdown-content"> 
+            <a rel="noopener" href="#Main">Inicio</a>
+            <a rel="noopener" href="#ChurchInfo">Iglesia</a> 
+            <a rel="noopener" href="#PartyInfo">Salón</a>
+            <a rel="noopener" href="#Photos">Nuestras fotos</a>
+            <a rel="noopener" href="#Schedule">Itinerario</a>
+            <a rel="noopener" href="#PartyDetail">Detalles de la fiesta</a>
+            <a rel="noopener" href="#Gifts">Regalos</a>
+            <a rel="noopener" href="#Album">Album digital</a>
+            <a rel="noopener" href="#Assistance">Asistencia</a>
+        </div>
     </div>
 </div>
 <div class="fullContainer">
     <p id="input-query" style="color: black"></p>
     <p style="color: black">Spacers correction</p>
-    <div class="p1-container">
+    <div id="Main" class="p1-container">
         <img src="resources/wedback.jpeg" alt="Wedding background image" class="p1-background-image">
         <div class="p1-background-scrim"></div>
         <div class="p1-title-content">
@@ -62,7 +75,7 @@
 
         </div>
     </div>
-    <div class="p3-behind-container">
+    <div id="ChurchInfo" class="p3-behind-container">
         <div style="background-image: url('resources/backp3.jpeg');" class="p3-container">
             <div class="p3-church-container">
                 <img src="resources/church_background.jpeg" alt="church image" class="p3-church-image">
@@ -99,7 +112,7 @@
                         id="church_maps_frame"
                 ></iframe>
             </div>
-            <div class="p3-church-container">
+            <div id="PartyInfo" class="p3-church-container">
                 <img src="resources/party_background.jpeg" alt="church image" class="p3-church-image">
                 <div class="p3-church-scrim"></div>
                 <div class="p3-church-content">
@@ -138,7 +151,7 @@
             </div>
         </div>
     </div>
-    <div class="p4-content">
+    <div id="Photos" class="p4-content">
         <br>
         <p class="p4-title-text">Nuestros momentos</p>
         <div class="p4-slider-container">
@@ -153,6 +166,7 @@
                 <button class="p4-modal-next">&#10095;</button>
             </div>
         </div>
+        <div id="Schedule"></div>
         <p id="p5-storyLine" class="p4-title-text">Itineriario</p>
         <br>
         <br>
@@ -255,7 +269,7 @@
         </div>
         -->
     </div>
-    <div class="p6-content">
+    <div id="PartyDetail" class="p6-content">
         <div class="p6-top-divider"></div>
         <p class="p6-title-text">Fiesta</p>
         <p class="p6-subtitle-value">Hagamos que nuestra fiesta este bien mamalona</p>
@@ -339,7 +353,7 @@
         <hr>
         <div class="p6-top-divider"></div>
     </div>
-    <div class="p4-content">
+    <div id="Gifts" class="p4-content">
         <p class="p4-title-text">Regalos</p>
         <div>Revisa nuestra mesa de regalos</div>
         <div class="p6-card">
@@ -353,14 +367,14 @@
                 <p>Instrucciones: Visita nuestra mesa de regalos puedes pedirlo por medio de la pagina. O directamente en la tienda no olvides mencionar nuestro numero de evento el cual es 51486684</p>
             </div>
             <div class="p6-button-container">
-                <button onclick="location.href='https://mesaderegalos.liverpool.com.mx/milistaderegalos/51486684'">Ir a la mesa</button>
+                <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51486684" target="_blank">
+                    <button>Ir a la mesa</button>
+                </a>
             </div>
         </div>
-        <hr>
-        <hr>
-        <hr>
+        <br><br><br>
     </div>
-    <div class="p6-content">
+    <div id="Album" class="p6-content">
         <div class="p6-top-divider"></div>
         <p>#andreayalfredo</p>
         <div id="album-lottie-content" style="width: 200px; height: 200px;"></div>
@@ -368,13 +382,11 @@
         <p>Escanea este código QR para acceder al album digital</p>
         <img style="width: 300px; height: 300px;" src="resources/album_qr.png" alt="QR Album">
         <p>O tambien puedes presionar el siguiente enlace</p>
-        <a href="https://photos.app.goo.gl/yuXfFVcbo3rrebio6">Ver Album</a>
-        <hr>
-        <hr>
-        <hr>
+        <a rel="noopener" target="_blank" href="https://photos.app.goo.gl/yuXfFVcbo3rrebio6">Ver Album</a>
+        <br><br><br>
         <div class="p6-top-divider"></div>
     </div>
-    <div class="p4-content">
+    <div id="Assistance" class="p4-content">
         <p class="p4-title-text">Los esperamos</p>
         <p id="guestName" class="p4-title-text"></p>
         <div>De ante mano te gradecemos por ser una parte importante en nuestras vidas y esperamos que puedas confirmarnos tu asistencia</div>
