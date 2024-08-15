@@ -224,7 +224,7 @@ body {
 .p2-table-values {
     padding: 10px;
     text-align: center;
-    font-size: 6vw; 
+    font-size: 8vw; 
     width: auto; 
     margin: 0 auto;
     font-weight: bold;
@@ -238,7 +238,7 @@ body {
     padding: 10px;
     text-align: center;
     color: white;
-    font-size: 6vw; 
+    font-size: 8vw; 
     width: auto; 
     margin: 0 auto;
 }
@@ -248,7 +248,7 @@ body {
 }
 
 .p2-title-text {
-    font-size: 8vw; 
+    font-size: 10vw; 
     width: 90%; 
     margin: 0 auto;
     background: white;
