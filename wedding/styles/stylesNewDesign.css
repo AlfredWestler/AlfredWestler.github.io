@@ -57,7 +57,7 @@
 }
 
 .dropdown-content {
-    background-color: #FFFFFF4D;
+    background-color: #ffffffbd;
     display: none;
     position: absolute;
     width: auto;
@@ -377,10 +377,10 @@ body {
     color: white;
     font-family: 'Athena';
     text-shadow: 
-                -1px -1px 0 #000,  
-                1px -1px 0 #000,   
-                -1px 1px 0 #000,   
-                1px 1px 0 #000;
+                -1px -1px 0 darkslategray,  
+                1px -1px 0 darkslategray,   
+                -1px 1px 0 darkslategray,   
+                1px 1px 0 darkslategray;
 }
 
 .p3-title-divider {
@@ -445,7 +445,7 @@ body {
 .p4-title-text {
     font-weight: bold;
     text-align: center;
-    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    background: linear-gradient(to right, #57370D, #E5BF5E, #57370D);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -765,7 +765,7 @@ body {
 */
 
 .p6-content {
-    background-color: #F2EBD8;
+    background: linear-gradient(to right, #57370D, #E5BF5E, #57370D);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -780,12 +780,13 @@ body {
 }
 
 .p6-title-text {
-    font-size: 40px;
+
     font-weight: bold;
-    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    background: white;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 
 .p6-subtitle-value {
