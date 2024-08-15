@@ -445,7 +445,7 @@ body {
 .p4-title-text {
     font-weight: bold;
     text-align: center;
-    background: linear-gradient(to right, #57370D, #E5BF5E, #57370D);
+    background: linear-gradient(to right, #57370D, #57370D, #E5BF5E, #57370D, #57370D);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -765,7 +765,7 @@ body {
 */
 
 .p6-content {
-    background: linear-gradient(to right, #57370D, #E5BF5E, #57370D);
+    background: linear-gradient(to right,  #feeabf, #e9cda0, #d2b288, #c49c76, #cba984, #dcc19c, #ebd7b7, #fef0d6, #bd9b75, #a37a50);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -788,10 +788,10 @@ body {
     color: white;
     font-family: 'Athena';
     text-shadow: 
-                -1px -1px 0 darkslategray,  
-                1px -1px 0 darkslategray,   
-                -1px 1px 0 darkslategray,   
-                1px 1px 0 darkslategray;
+                -1px -1px 0 #BF8970,  
+                1px -1px 0 #BF8970,   
+                -1px 1px 0 #BF8970,   
+                1px 1px 0 #BF8970;
 }
 
 .p6-subtitle-value {
@@ -853,7 +853,7 @@ body {
 }
 
 .p6-button-container button {
-    background-color: #0DAD73;
+    background: linear-gradient(to right, #feeabf, #e9cda0, #d2b288, #c49c76, #cba984, #dcc19c, #ebd7b7, #fef0d6, #bd9b75, #a37a50);
     color: white;
     border: none;
     width: 100%;
