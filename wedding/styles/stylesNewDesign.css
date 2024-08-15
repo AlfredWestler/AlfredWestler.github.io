@@ -57,6 +57,7 @@
 }
 
 .dropdown-content {
+    background-color: white;
     display: none;
     position: absolute;
     width: auto;
@@ -184,6 +185,14 @@ body {
     padding: 0 12px;
 }
 
+.p1-text-date {
+    color: white;
+    font-size: 3vw; 
+    width: 100%; 
+    margin: 0 auto;
+    font-family: 'Cathena';
+}
+
 /*
 * @Styles
 * Section: Count Down Timer
@@ -215,7 +224,9 @@ body {
 .p2-table-values {
     padding: 10px;
     text-align: center;
-    font-size: 32px;
+    font-size: 2vw; 
+    width: auto; 
+    margin: 0 auto;
     font-weight: bold;
     background: white;
     background-clip: text;
@@ -227,6 +238,9 @@ body {
     padding: 10px;
     text-align: center;
     color: white;
+    font-size: 2vw; 
+    width: auto; 
+    margin: 0 auto;
 }
 
 .p2-table-border {
@@ -234,11 +248,14 @@ body {
 }
 
 .p2-title-text {
-    font-size: 50px;
+    font-size: 5vw; 
+    width: 90%; 
+    margin: 0 auto;
     background: white;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: 'Cathena';
 }
 
 .p2-finish-content {
