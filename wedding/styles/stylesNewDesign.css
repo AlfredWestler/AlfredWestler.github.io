@@ -18,7 +18,14 @@
 
 @font-face {
     font-family: 'Cathena';
-    src: url('fonts/Cathena.otf') format('opentype');
+    src: url('fonts/Montsera.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montsera';
+    src: url('fonts/Montsera.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }   
@@ -395,7 +402,7 @@ body {
 }
 
 .p3-subtitle-text {
-    font-size: 5vw;
+    font-size: 7vw;
     width: var(--screen-width) * .7;
     margin-top: 20px;
     background: linear-gradient(to right, #57370D, #E5BF5E, #57370D);
@@ -455,7 +462,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 6vw; 
+    font-size: 7vw; 
     width: var(--screen-width) * .8; 
     margin: 0 auto;
     font-family: 'Athena';
@@ -821,7 +828,9 @@ body {
 
 .p6-card-header h2 {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 6vh;
+    width: var(--screen-width) * .6;
+    font-family: 'Montsera';
 }
 
 .p6-icon-container {
@@ -862,7 +871,7 @@ body {
     background: linear-gradient(to right, #feeabf, #e9cda0, #d2b288, #c49c76, #cba984, #dcc19c, #ebd7b7, #fef0d6, #bd9b75, #a37a50);
     color: white;
     border: #000000;
-    width: 100%;
+    width: var(--screen-width);
     padding: 10px 20px;
     border-radius: 25px;
     cursor: pointer;
@@ -929,4 +938,43 @@ body {
 
 .p6-btn:hover {
     background: #218838;
+}
+
+/*
+* @Styles
+* Section: Album
+* ID: p7
+*/
+
+.p7-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    background-size: cover; /* La imagen se escala para cubrir completamente el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; 
+}
+
+.p7-title-text {
+    font-size: 8vh;
+    width: var(--screen-width) * .8;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Montsera';
+}
+
+.p7-title-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.p7-lottie-container {
+    width: 300px;
+    height: 300px;
 }
