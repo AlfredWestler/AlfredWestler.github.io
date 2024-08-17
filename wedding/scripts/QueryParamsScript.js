@@ -6,7 +6,7 @@ function getQueryParam(param) {
 const id = getQueryParam("id") //for firebase id data base
 const change = getQueryParam("change") //to set the current change to product visualize
 
-if(change !== null) {
+if(id !== null) {
     document.getElementById("input-query").innerText = `production id: ${change}`;
 } else {
     document.getElementById("input-query").innerText = `No se encontró el parámetro "change" en la URL.`;

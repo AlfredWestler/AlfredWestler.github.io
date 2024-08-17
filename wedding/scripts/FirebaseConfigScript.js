@@ -66,42 +66,6 @@ async function getGuest() {
     }
 }
 
-document.getElementById('confirm_yes').onclick = async function() {
-    console.log("Se presiono el boton");
-
-    const docId = id;
-
-    try {
-        const docRef = doc(db, 'Guest', docId);
-        
-        await updateDoc(docRef, {
-            confirm: true
-        });
-
-        console.log("Document updated");
-    } catch (error) {
-        console.error("Error obteniendo el documento: ", error);
-    }
-}
-
-document.getElementById('confirm_no').onclick = async function() {
-    console.log("Se presiono el boton");
-
-    const docId = id;
-
-    try {
-        const docRef = doc(db, 'Guest', docId);
-        
-        await updateDoc(docRef, {
-            confirm: false
-        });
-
-        console.log("Document updated");
-    } catch (error) {
-        console.error("Error obteniendo el documento: ", error);
-    }
-}
-
 document.getElementById('add_document').onclick = addNewGuest;
 
 document.getElementById('p6-music-submit').onclick = submitRecommendation;

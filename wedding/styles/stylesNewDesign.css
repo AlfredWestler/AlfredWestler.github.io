@@ -866,7 +866,7 @@ body {
 
 .p6-text {
     font-size: 3vh;
-    width: var(--screen-width) * .8;
+    width: var(--screen-width) * .95;
     font-family: 'Montsera';
 }
 
@@ -875,7 +875,6 @@ body {
     display: flex; 
     flex-direction: row; 
     justify-content: space-between; 
-    align-items: center;
 }
 
 .p6-circle-dress-color {
@@ -985,7 +984,7 @@ body {
     background: linear-gradient(to right, #feeabf, #e9cda0, #d2b288, #c49c76, #cba984, #dcc19c, #ebd7b7, #fef0d6, #bd9b75, #a37a50);
     color: white;
     border: #000000;
-    width: var(--screen-width);
+    width: var(--screen-width) * .9;
     padding: 10px 20px;
     border-radius: 25px;
     cursor: pointer;
@@ -1010,7 +1009,7 @@ body {
 }
 
 .p7-title-text {
-    font-size: 8vh;
+    font-size: 7vh;
     width: var(--screen-width) * .8;
     margin: 0 auto;
     color: white;
