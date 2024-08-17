@@ -33,3 +33,15 @@ function p6TipsContent() {
         button.textContent = 'Ver mas';
     }
 }
+
+function p6Confirmation() {
+    const content = document.getElementById('p6-expandable-confirmation');
+    const button = document.getElementById('p6-button-confirmation');
+    if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        button.textContent = 'Ocultar';
+    } else {
+        content.style.display = 'none';
+        button.textContent = 'Ver detalles';
+    }
+}
