@@ -48,6 +48,7 @@ async function addNewGuest() {
 // Función para obtener un documento específico por ID
 async function getGuest() {
     const docId = id;
+    const guestName = document.getElementById('guestName');
 
     try {
         const docRef = doc(db, 'Guest', docId);
@@ -55,7 +56,6 @@ async function getGuest() {
 
         if (docSnap.exists()) {
             const guestDetail = document.getElementById('guestDetail');
-            const guestName = document.getElementById('guestName');
             guestName.innerText = `${docSnap.data().name}`
             guestDetail.innerHTML = `Nombre: ${docSnap.data().name} <br> Pieza: ${docSnap.data().puzzle} <br> Mesa: ${docSnap.data().table}`;
         } else {
