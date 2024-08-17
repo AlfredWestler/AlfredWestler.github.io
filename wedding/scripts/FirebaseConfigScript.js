@@ -55,9 +55,9 @@ async function getGuest() {
         const docSnap = await getDoc(docRef);
 
         if (docSnap.exists()) {
-            const guestDetail = document.getElementById('guestDetail');
+            //const guestDetail = document.getElementById('guestDetail');
             guestName.innerText = `${docSnap.data().name}`
-            guestDetail.innerHTML = `Nombre: ${docSnap.data().name} <br> Pieza: ${docSnap.data().puzzle} <br> Mesa: ${docSnap.data().table}`;
+            //guestDetail.innerHTML = `Nombre: ${docSnap.data().name} <br> Pieza: ${docSnap.data().puzzle} <br> Mesa: ${docSnap.data().table}`;
         } else {
             console.log("No such document!");
         }
@@ -65,8 +65,6 @@ async function getGuest() {
         console.error("Error obteniendo el documento: ", error);
     }
 }
-
-document.getElementById('add_document').onclick = addNewGuest;
 
 document.getElementById('p6-music-submit').onclick = submitRecommendation;
 
