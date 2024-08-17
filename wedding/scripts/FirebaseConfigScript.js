@@ -56,7 +56,9 @@ async function getGuest() {
 
         if (docSnap.exists()) {
             //const guestDetail = document.getElementById('guestDetail');
-            guestName.innerText = `${docSnap.data().name}`
+            let allNames = docSnap.data().name.split(',');
+            let listItems = allNames.map(name => `<li>${name.trim()}</li>`).join('');
+            guestName.innerHTML = `<ul>${listItems}</ul>`;
             //guestDetail.innerHTML = `Nombre: ${docSnap.data().name} <br> Pieza: ${docSnap.data().puzzle} <br> Mesa: ${docSnap.data().table}`;
         } else {
             console.log("No such document!");
